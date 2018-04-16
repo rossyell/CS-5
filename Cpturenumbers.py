@@ -19,6 +19,9 @@ while True:
     except:
     	print("Please only enter a number")
 #exits on "done", calculates average and prints
-average = total/count
+try:
+    average = total/count
+except:
+    print("Note no numbers entered")    
 rnd_average = round(average, 2)
 print("Total:", total, " Valid numbers:", count, " Average:", rnd_average)
